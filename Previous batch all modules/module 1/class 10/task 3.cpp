@@ -4,7 +4,8 @@ using namespace std;
 int main()
 {
    
-   int number = 231;        // number = 231
+//    int number = 231;        // number = 231
+   long long number; cin >> number;
    
    int c = number % 10;     /// c = 1
    number = number / 10;    /// number = 23
@@ -16,7 +17,7 @@ int main()
     
 
 
-   int abc = 0;             /// abc  = 0;
+   long long abc = 0;             /// abc  = 0;
 
    abc = abc + a;           /// abc= 0 + 2 = 2;
    abc = abc * 10;          /// abc = 2 * 10 = 20
@@ -27,7 +28,7 @@ int main()
    abc = abc + c;           /// abc = 230 + 1 = 231
 
 
-   int bca = 0;             /// bca = 0;
+   long long bca = 0;             /// bca = 0;
 
    bca = bca + b;           /// bca = 0 + 3;
    bca = bca * 10;          /// bca = 3 * 10 = 30
@@ -38,7 +39,7 @@ int main()
    bca = bca + a;           /// bca = 310 + 2 = 312
 
 
-   int cab = 0;             /// cab = 0;
+   long long cab = 0;             /// cab = 0;
 
    cab = cab + 1;           /// cab = 0 + 1 = 1
    cab = cab * 10;         /// cab = 1 * 10 = 10
@@ -49,7 +50,7 @@ int main()
    cab = cab + b;         // cab = 120 + 3 = 123
 
 
-   int ans = abc + bca + cab;
+   long long ans = abc + bca + cab;
 
    cout<< ans << endl;
 
