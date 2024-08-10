@@ -22,11 +22,18 @@ int main()
 }
 
 
-Note : If both digits are same then xor value will 0;
-
+# If both digits are same then xor value will 0;
 if 5 ^ 5 = 0, cz 5 = 101, 5 = 101, 0 = 000
 if 5 ^ 5 ^ 5 = 5;
 if 5 ^ 5 ^ 3 = 3; five-five vanish, then 3 will exist.
+
+
+# NOte :  if any number xor with 0, then the ans will be the number itself.
+        5 ^ 0 = 5
+        5 ^ 5 = 0
+        5 ^ 5 ^ 5 = 5
+        5 ^ 5 ^ 3 = 3; five-five vanish, then 3 will exist.
+
 
 
 example 2 : 

@@ -35,3 +35,12 @@ example 2 :
 
 
 
+example 3 :
+............
+
+13 & 9
+
+13 = 1101
+9  = 1001   // 9 er sob gula bit 13 er bit gular maje available
+            // 9 bits are subset of 13 bits, So ans is 9 othoba 9's bits decimal;
+9  = 1001             
