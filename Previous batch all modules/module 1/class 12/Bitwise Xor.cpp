@@ -1,7 +1,7 @@
 # Bitwise AND Operations:
 ............................
-# 3 Bitwise operators XOR(^): bit same hole 0, otherwise 1
-                             // odd number 1 thakle 1. even number 0 thakle 0
+# 3 Bitwise operators XOR(^): //bit same hole 0, otherwise 1
+                              // odd number 1 thakle 1. even number 0 thakle 0
 
 17 XOR 12
 
@@ -36,7 +36,7 @@ if 5 ^ 5 ^ 3 = 3; five-five vanish, then 3 will exist.
 
 
 
-example 2 : 
+Example 2 : 
 
 3 ^ 5 ^ 10;
 
