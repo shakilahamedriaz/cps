@@ -7,10 +7,17 @@ int main() {
     int i = 0;
     do {
         cout << i << " ";
+        if(i == 5)
+        {
+            break;
+        }
         i++;
     } while (i <= 10);
 
     cout<< "After loop i = " << i << endl;
+
+
+
 
     cout<< "Another example : " << endl;
 
