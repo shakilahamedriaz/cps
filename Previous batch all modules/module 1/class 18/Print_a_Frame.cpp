@@ -12,21 +12,20 @@ int main()
         if(r == 0 && c == 0) 
         break;
 
-        for(int i = 0; i < c; i++) cout<< "#";
+        for(int i = 1; i <= c; i++) cout<< "#";
         cout<< "\n";
 
-        for(int i = 0; i < r; i++)
+        for(int i = 2; i <= r-1; i++)
         {
-            for(int j = 0; j < c; j++)
-            {
-                if( j == 0  || j == c - 1) cout<< "#" ;
-                else cout<< "*" ;
-            }
-            cout<< "\n";
+            cout<< "#";
+            for(int j = 2; j <= c-1; j++) cout<< ".";
+            
+            cout<< "#\n";
         }
+        
 
-        for(int i  = 0; i < c; i++) cout<< "#";
-        cout<< "\n";
+        for(int i = 1; i <= c; i++) cout<< "#";
+        cout<< "\n\n";
 
      }
 
