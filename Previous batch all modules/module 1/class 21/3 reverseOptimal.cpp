@@ -1,8 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 const int mx = 100123;
 int a[mx];
+
 
 int main()
 {
