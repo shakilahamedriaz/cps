@@ -8,7 +8,7 @@ int main()
     int n;
     cin >> n;
     int arr[n+5];
-    int brr[n+5];
+    int brr[n+5];  ///using auxlary array
 
     for(int i = 1; i <= n; i++) cin >> arr[i];
     
