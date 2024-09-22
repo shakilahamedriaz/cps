@@ -18,6 +18,8 @@ int main()
         s[i] = s[j];
         s[j] = temp;
     }
+
+    
     cout << s << "\n";
 
 
