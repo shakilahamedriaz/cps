@@ -26,6 +26,18 @@ int main()
     cout<< *(a+2) << endl;
     cout<< *(a+3) << endl;
     cout<< *(a+4) << endl;
+    //end pointer : a + 5; or we can say a + array_size;
+
+    
+    int b[5] = {1, 2, 3, 4, 5};
+    reverse(a, + a + 5);  // as we learn, fisrt to end pointer, then all of these are reversed
+
+    for(int i = 0; i < 5; i++)
+    {
+        cout<< a[i] << " ";
+    }
+
+   // reverse(startPointer, endPointer - after that index);
 
     return 0;
 }
