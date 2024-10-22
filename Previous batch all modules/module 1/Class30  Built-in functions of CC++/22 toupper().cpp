@@ -8,20 +8,23 @@ typedef double dl;
 #define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
 
+#define mem(a, b) memset(a, b, sizeof(a))
+#define sqr(a) ((a) * (a))
+
+
+const int mx = 1e5;
+int a[mx];
+int cnt[100000123];
+
 int main()
 {
     optimize();
 
-    dl a = 2.5567;
-    cout<< "Ceil of " << a << " a is "<< ceil(a) << endl; // 3
-    cout<< "Floor of " << a << " is "<< floor(a) << endl; // 2
+   char c = 'd';
 
-    dl b = 2.56;
-    dl c = 2.47;
+   cout<< "Converting lower case letter to upper case letter: "<< (char)toupper(c) << endl;
 
-    cout<< "Round of " << b << " is "<< round(b) << endl; // 3
-    cout<< "Round of " << c << " is "<< round(c) << endl; // 2
-
+   
 
     return 0;
 }

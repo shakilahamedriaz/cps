@@ -30,11 +30,11 @@ int main()
 
     
     int b[5] = {1, 2, 3, 4, 5};
-    reverse(a, + a + 5);  // as we learn, fisrt to end pointer, then all of these are reversed
+    reverse(b,  b + 5);  // as we learn, fisrt to end pointer, then all of these are reversed
 
     for(int i = 0; i < 5; i++)
     {
-        cout<< a[i] << " ";
+        cout<< b[i] << " ";
     }
 
    // reverse(startPointer, endPointer - after that index);
