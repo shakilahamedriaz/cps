@@ -7,7 +7,7 @@ int main()
     
     ll n;
     cin >> n;
-
+ 
     cout<< "0 0" << " ";
     cout<< n << "\n";
 
