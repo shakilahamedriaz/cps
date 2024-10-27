@@ -1,0 +1,13 @@
+🎯 Discussed Problems:
+1) A. Sereja and Dima ( Codeforces )
+Link:  https://codeforces.com/problemset/problem/381/A
+My Code: https://codeforces.com/contest/381/submission/86489536
+2) 852. Peak Index in a Mountain Array ( Leet Code )
+Link:  https://leetcode.com/problems/peak-index-in-a-mountain-array/
+My Code: https://paste.ubuntu.com/p/htY8BtzP37/
+3) 1502. Can Make Arithmetic Progression From Sequence ( Leet Code )
+Link:  https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
+My Code : https://paste.ubuntu.com/p/W4CrBpFkHx/
+4) Distinct Count ( Hacker erath )
+LInk : https://www.hackerearth.com/practice/data-structures/trees/binary-search-tree/practice-problems/algorithm/distinct-count/submissions/ 
+My Code : https://paste.ubuntu.com/p/fKCMyPc6CS/
