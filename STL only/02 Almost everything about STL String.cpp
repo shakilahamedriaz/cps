@@ -191,6 +191,46 @@ int main ()
 	if ( s.find( "asd" ) != -1 ) cout << "Substring found";
 	else cout << "Not found";
 
+    //next permutation, next second largest string
+    s = "abc";
+    next_permutation ( s.begin(), s.end() );
+    cout << s << endl; /// acb
+    //next_permuatation returns 1 if there is a next permutation, otherwise 0
+
+    //print all permutation of a string : 
+    s = "abc";
+    do {
+        cout << s << endl;
+    } while ( next_permutation ( s.begin(), s.end() ) );
+    // output : abc, acb, bac, bca, cab, cba
+
+
+    //print all permutation of a string in lexicographical order
+    s = "abc";
+    sort ( s.begin(), s.end() );
+    do {
+        cout << s << endl;
+    } while ( next_permutation ( s.begin(), s.end() ) );
+
+
+    //print all permutation_of vctor of int
+    vector<int> v1 = { 1, 2, 3 };
+    do {
+        for ( auto u : v1 ) cout << u << " ";
+        cout << endl;
+    } while ( next_permutation ( v1.begin(), v1.end() ) );
+
+
+
+    //print all permutation of vector of int in lexicographical order
+    v1 = { 1, 2, 3 };
+    sort ( v1.begin(), v1.end() );
+    do {
+        for ( auto u : v1 ) cout << u << " ";
+        cout << endl;
+    } while ( next_permutation ( v1.begin(), v1.end() ) );
+
+
 
     return 0;
 }

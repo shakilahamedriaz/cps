@@ -109,6 +109,12 @@ int main ()
     a = { 2, 3, 1, 5 };
     cout << max_element( a.begin(), a.end() ) - a.begin() << endl; /// 3
     cout << *max_element( a.begin(), a.end() ) << endl; /// 5
-
+    
+    // Extra: Loop over array using auto
+    int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    for(auto f : a) cout << f << " ";  // Range-based loop
+    // output: 1 2 3 4 5 6 7 8 9 10
+    cout << endl << endl;
+    
     return 0;
 }
