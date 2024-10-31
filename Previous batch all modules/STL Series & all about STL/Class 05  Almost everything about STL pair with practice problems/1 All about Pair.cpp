@@ -177,9 +177,9 @@ int main()
     //First element: 5
     //Second element: 6
 
-    // Sorting using comparator
+    /////////////*******       Sorting using comparator
     vector<pair<int,int >>v = {{2, 3}, {4, 5}, {1, 5}, {1, 6}, {6, 7}, {6, 8}};
-    sort(v.begin(), v.end(), cmp);  // Sort using custom comparator
+    sort(v.begin(), v.end(), cmp);  // Sort using custom comparator - //// (avobe function)
     for(auto u : v) cout << u.first << " " << u.second << endl;
     // Output:
     // 6 7
