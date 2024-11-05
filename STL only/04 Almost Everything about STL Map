@@ -1,0 +1,147 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // Map Basics
+    // map complexity: O(log n) for search, insert, and delete
+    // Map is an associative container that stores elements in key-value pairs
+    // Map stores keys in a sorted order (by default in ascending order)
+
+    // Declaration of map
+    // map<key_type, value_type> map_name;
+    // map<key_type, value_type> map_name{{key1, value1}, {key2, value2}, {key3, value3}};
+    
+    // Initialization of map
+    map<int, string> m;  // Map key should be unique/distinct
+    m[1] = "abc";
+    m[2] = "def";
+    m[3] = "ghi";
+    m[4] = "jkl";
+    m[5] = "mno";
+
+    // Accessing a specific value
+    cout << m[3] << endl;  // output: ghi
+
+    // Iterating over map
+    for(auto i : m) {
+        cout << i.first << " " << i.second << endl;
+    }
+    // output:
+    // 1 abc
+    // 2 def
+    // 3 ghi
+    // 4 jkl
+    // 5 mno
+
+    // Another example of map
+    map<string, int> id;
+    id["sharif"] = 1;
+    id["shuvo"] = 2;
+    id["sajib"] = 3;
+    id["sakib"] = 4;
+    id["israt"] = 5;
+
+    cout << id["israt"] << endl;  // output: 5
+    
+    // Iterating over map with string keys
+    for(auto i : id) {
+        cout << i.first << " " << i.second << endl;
+    }
+    // output:
+    // sharif 1
+    // shuvo 2
+    // sajib 3
+    // sakib 4
+    // israt 5
+
+    // Map with string values
+    map<string, string> gender;
+    gender["shakil"] = "male";
+    gender["sharif"] = "female";
+
+    cout << gender["shakil"] << " " << gender["sharif"] << endl;  // output: male female
+
+    // Finding frequency of vector elements using map
+    vector<long long> v = {1, 123233432232, 2334123345, 123233432232};
+    map<long long, int> freq;
+
+    for(int i = 0; i < v.size(); i++) {
+        freq[v[i]]++;
+    }
+
+    cout << freq[123233432232] << endl;  // output: 2
+
+    // Map stores data in sorted order
+    vector<int> v1 = {1, 7, 7, 3, 4, 4, 8, 8};
+    map<int, int> mp;
+    for(auto u : v1) mp[u]++;
+    for(auto u : mp) cout << u.first << " " << u.second << endl;
+    // output:
+    // 1 1
+    // 3 1
+    // 4 2
+    // 7 2
+    // 8 2
+
+    // If the map key is a string, it will sort lexicographically
+    map<string, int> id2;
+    id2["sharif"] = 1;
+    id2["shuvo"] = 2;
+    id2["sajib"] = 3;
+    id2["sakib"] = 4;
+    id2["israt"] = 5;
+
+    for(auto i : id2) {
+        cout << i.first << " " << i.second << endl;
+    }
+    // output:
+    // israt 5
+    // sakib 4
+    // sajib 3
+    // sharif 1
+    // shuvo 2
+
+    // If the map key is a char, it will sort lexicographically
+    map<char, int> mp2;
+    mp2['a'] = 1;
+    mp2['c'] = 2;
+    mp2['b'] = 3;
+    mp2['d'] = 4;
+
+    for(auto i : mp2) {
+        cout << i.first << " " << i.second << endl;
+    }
+    // output:
+    // a 1
+    // b 3
+    // c 2
+    // d 4
+
+    // Taking input from user for map
+    map<string, int> mmp;
+    int n;
+    cin >> n;
+    for(int i = 0; i < n; i++) {
+        string s;
+        int x;
+        cin >> s >> x;
+        mmp[s] = x;
+    }
+
+    // Storing maps in a vector
+    vector<map<string, int>> v_map;
+
+    map<string, int> m1;
+    m1["sr"] = 1;
+    m1["sh"] = 2; 
+    m1["sa"] = 3;
+
+    v_map.push_back(m1);
+    cout << v_map[0]["sr"] << endl;  // output: 1
+
+    // Size of map
+    cout << m.size() << endl;  // output: contains unique keys in map `m`
+    
+    return 0;
+}
