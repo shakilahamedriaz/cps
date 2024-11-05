@@ -148,6 +148,22 @@ int main()
     }
     
 
+    // containing map in vector
+    vector<map<string, int > > v;
+
+    map<string, int> m1;
+    m1["sr"] = 1;
+    m1["sh"] = 2; 
+    m1["sa"] = 3;
+
+    v.push_back(m1);
+    //print a specific value
+    cout<<v[0]["sr"]<<endl;
+    //output : 1
+
+    //size of map
+    cout<<m.size()<<endl; //contain unique key
+
 
      
     
