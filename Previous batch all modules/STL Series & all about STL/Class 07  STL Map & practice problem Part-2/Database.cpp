@@ -25,7 +25,8 @@ int main()
         
 
         if(done == 1) cout<< "Scenario #" << i << ": possible" <<endl;
-        else  cout<< "Scenario #" << i << ": impossible" <<endl;
+        else        cout<< "Scenario #" << i << ": impossible" <<endl;
+       
 
     }
 
