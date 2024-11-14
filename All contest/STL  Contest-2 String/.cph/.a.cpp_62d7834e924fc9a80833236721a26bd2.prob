@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"e:\\Competative Progtamming\\cps\\All contest\\STL  Contest-2 String\\a.cpp","tests":[{"id":1731592738146,"input":"3\nTakahashi\nAoki\nSnuke\n","output":"Snuke\nAoki\nTakahashi\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Competative Progtamming\\cps\\All contest\\STL  Contest-2 String\\a.cpp","group":"local","local":true}
