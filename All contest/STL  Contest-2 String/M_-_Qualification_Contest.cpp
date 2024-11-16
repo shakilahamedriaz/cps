@@ -10,28 +10,31 @@ using namespace std;
 int gcd(int a, int b) { if(a % b == 0) return b; else return gcd(b, a % b); }
 int lcm(int a, int b) { return (a * b) / gcd(a, b); }
  
+
 void shakil_sol() 
 {
+   int n, k;
+   cin >> n >> k;
+   vector<string> v,vn;
 
-    int t;
-    cin >> t;
-    while(t--)
-    {  
+   for(int i = 0; i < n; i++)
+   {
+       string s; cin >> s;
+       v.push_back(s);
+   }
 
-       int n;
-       cin >> n;
-       string s;
-       cin >> s;
-       for(auto &u : s) 
-       {
-          u = tolower(u);
-       }
-       
-      s.erase(unique(s.begin(), s.end()), s.end());
-     
-      cout<< (s == "meow" ? "YES"  : "NO") << endl;
+   for(int i = 0; i < k; i++) 
+   {
+      vn.push_back(v[i]);
+   }
+   
+   sort(vn.begin(), vn.end());
 
-    }  
+   for(auto u : vn)
+   { 
+       cout<< u << endl;
+   }
+
 }
  
 int32_t main() 
@@ -43,3 +46,4 @@ int32_t main()
     
     return 0;
 }
+ 

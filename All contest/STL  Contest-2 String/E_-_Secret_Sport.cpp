@@ -23,7 +23,6 @@ void shakil_sol()
 
         cout<< s.back() << endl;
     }  
-    
 }
 
 int32_t main() 

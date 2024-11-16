@@ -12,7 +12,6 @@ int lcm(int a, int b) { return (a * b) / gcd(a, b); }
  
 void shakil_sol() 
 {
-
     int t;
     cin >> t;
     while(t--)
@@ -27,9 +26,20 @@ void shakil_sol()
           u = tolower(u);
        }
        
-      s.erase(unique(s.begin(), s.end()), s.end());
-     
-      cout<< (s == "meow" ? "YES"  : "NO") << endl;
+       string ans = "";
+
+       for(int i = 0; i < n; i++)
+       {
+          if(s[i] != s[i+1])
+          {
+             ans += s[i];
+          }
+       }
+      
+ 
+      if(ans == "meow") cout << "YES" << endl; 
+      else cout<< "NO" << endl;
+
 
     }  
 }

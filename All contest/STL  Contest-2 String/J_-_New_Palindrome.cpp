@@ -10,28 +10,33 @@ using namespace std;
 int gcd(int a, int b) { if(a % b == 0) return b; else return gcd(b, a % b); }
 int lcm(int a, int b) { return (a * b) / gcd(a, b); }
  
+
 void shakil_sol() 
 {
-
-    int t;
+    int t; 
     cin >> t;
-    while(t--)
-    {  
 
-       int n;
-       cin >> n;
+    while(t--)
+    {
        string s;
        cin >> s;
-       for(auto &u : s) 
-       {
-          u = tolower(u);
-       }
        
-      s.erase(unique(s.begin(), s.end()), s.end());
-     
-      cout<< (s == "meow" ? "YES"  : "NO") << endl;
+       s = s.substr(0, s.size() / 2);
+       
+    //    int n = unique(s.begin(), s.end()) - s.begin(); 
+    //    //it returns the iterator to the end of the unique elements
+    //    if(n == 1) cout<< "NO" << endl;
+    //    else cout<< "YES" << endl;
 
-    }  
+    set<char> st;
+    
+    for(auto u : s) st.insert(u);
+
+    if(st.size() == 1) cout<< "NO" << endl;
+    else cout<< "YES" << endl;
+
+       
+    }
 }
  
 int32_t main() 
@@ -43,3 +48,4 @@ int32_t main()
     
     return 0;
 }
+ 
