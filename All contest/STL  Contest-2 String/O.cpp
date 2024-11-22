@@ -12,26 +12,13 @@ int lcm(int a, int b) { return (a * b) / gcd(a, b); }
 
 void shakil_sol() 
 {
-   string s;
-   cin >> s;
-   string ans = ""; //take as stack
- 
-   for(int i = 0; i < s.size(); i++)
-   {
-      if(ans.size() && ans.back() == s[i])
-      {
-          ans.pop_back();
-      }
-      else
-      {
-          ans.push_back(s[i]);
-      }
-   }
-
-   if(ans.size()) cout<< ans << endl;
-   else cout<< "Empty String" << endl;
-
     
+
+    string s;
+    cin >> s;
+
+
+
 }
 
 int32_t main() 

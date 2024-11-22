@@ -12,32 +12,30 @@ int lcm(int a, int b) { return (a * b) / gcd(a, b); }
 
 void shakil_sol() 
 {
-   string s;
-   cin >> s;
-   string ans = ""; //take as stack
- 
-    for (int i = 0; i < s.size(); i++) 
+    int t ;
+    cin >> t;
+    while( t-- )
     {
-        if (ans.size() && ans.back() == s[i]) // if the last element of ans is equal to the current element of s
+        int n, k;
+        cin >> n >> k;
+        string s;
+        cin >> s;
+
+        map<char, int > map;
+
+        for(int i = 0; i < n; i++)
         {
-            ans.pop_back();
-        } 
-        else 
-        {
-            ans.push_back(s[i]);
+            mp[s[i]] ++;
         }
-    }
 
-    if (ans.size()) 
-    {
-        cout << ans << endl;
-    } 
-    else 
-    {
-        cout << "Empty String" << endl;
-    }
+        for(auto u : mp)
+        {
+            
+        }
+        
 
-    
+
+    }
 }
 
 int32_t main() 
