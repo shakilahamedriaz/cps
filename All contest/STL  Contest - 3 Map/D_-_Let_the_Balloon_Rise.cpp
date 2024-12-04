@@ -17,40 +17,40 @@ void shakil_sol()
     int n;
     while(cin >> n && n != 0)
     {
-            // map<string, int> mp;
-            // //int mx_cnt = 0;
-            // // string ans;
+            map<string, int> mp;
+            int mx_cnt = 0;
+            string ans;
 
-            // // for(int i = 0; i < n; i++)
-            // // {
-            // //     string color;
-            // //     cin >> color;
-            // //     mp[color] ++;
-
-            // //     if(mp[color] > mx_cnt) 
-            // //     {
-            // //        mx_cnt = mp[color];
-            // //        ans = color;
-            // //     }
-
-            // // }
-
-            // // cout<< ans << endl;
-
-
-            vector<string> v;
             for(int i = 0; i < n; i++)
             {
                 string color;
                 cin >> color;
+                mp[color] ++;
 
-                v.push_back(color);
+                if(mp[color] > mx_cnt) 
+                {
+                   mx_cnt = mp[color];
+                   ans = color;
+                }
+
             }
 
-            //int k = max_element(v.begin(), v.end()) - v.begin();
-            //cout<< v[k] << endl;
+            cout<< ans << endl;
 
-            cout<< *max_element(v.begin(), v.end()) << endl;
+
+            // vector<string> v;
+            // for(int i = 0; i < n; i++)
+            // {
+            //     string color;
+            //     cin >> color;
+
+            //     v.push_back(color);
+            // }
+
+            // //int k = max_element(v.begin(), v.end()) - v.begin();
+            // //cout<< v[k] << endl;
+
+            // cout<< *max_element(v.begin(), v.end()) << endl;
     }
 }
  
