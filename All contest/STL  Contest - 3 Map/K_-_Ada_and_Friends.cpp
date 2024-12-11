@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#pragma GCC optimize("Ofast,unroll-loops")
-#pragma GCC target("avx,avx2,fma")
+// #pragma GCC optimize("Ofast,unroll-loops")
+// #pragma GCC target("avx,avx2,fma")
 #define ll long long
 #define ld long double
 #define PI 3.1415926535897932384626433832795
@@ -16,30 +16,31 @@ void shakil_sol()
 
    int n, k;
    cin >> n >> k;
-   map<string, int> freq_map;
-   set<string> st;
+   map<string, ll> freq_map;
 
    for(int i = 0; i < n; i++){
        string s;
-       int t;
+       ll t;
        cin >> s >> t;
-       freq_map[s] = t;
-       st.insert(s);
+       freq_map[s] += t;
+      
    }
 
-
-   int size = st.size();
-   cout<< size << endl;
-   cout<< freq_map.size() << endl;
-   if(size <= k){
-
-      int total_spare = 0;
-      for(auto &u : freq_map){
-         total_spare += u.second;
-      }
-      cout<< total_spare << endl;
-
+   //store all expense in a vecor
+   vector<ll> exp;
+   for(auto &u : freq_map){
+      exp.push_back(u.second);
    }
+
+   sort(exp.rbegin(), exp.rend());
+
+
+   ll total_spare = 0;
+   for(ll i = 0; i < min(k, (int)exp.size()); i++){
+      total_spare += exp[i];
+   }
+
+   cout<< total_spare << endl;
 
 }
  
