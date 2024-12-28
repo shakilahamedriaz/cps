@@ -17,7 +17,7 @@ int main()
     int add = p1 + p2;
 
     string ans = to_string(add);
-  //  cout<< ans <<endl;
+    cout<< ans <<endl;
    
 
     bool ok = true;

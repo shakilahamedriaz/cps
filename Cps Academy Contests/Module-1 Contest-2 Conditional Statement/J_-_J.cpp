@@ -11,11 +11,11 @@ int main()
     cin >> d >> r >> k;
     if(d > r && d > k )
     {
-        cout<< "Yes" << "\n";
+        cout<< "YES" << "\n";
     }
     else
     {
-        cout << "No" << "\n";
+        cout << "NO" << "\n";
     }
 
     return 0;
