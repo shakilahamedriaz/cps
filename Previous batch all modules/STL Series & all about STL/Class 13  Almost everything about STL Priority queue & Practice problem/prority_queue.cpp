@@ -11,6 +11,7 @@ using namespace std;
  - Min-Heap: Smallest element at the top (`greater<>` comparator).
 */
 
+
 int main()
 {
     priority_queue< int > q;
@@ -22,14 +23,18 @@ int main()
     q.push(5);
 
     // Size of priority queue
-    cout<< q.size() << endl; // Output: 5
+    cout<< q.size() << endl; 
+    // Output: 5
  
     // Top element
-    cout<<q.top()<< endl; // Output: 5
+    cout<<q.top()<< endl; 
+    // Output: 5
+    
+    // Remove top element
+    q.pop(); 
 
-    q.pop(); // Remove top element
-
-    cout<<q.top()<< endl; // Output: 4
+    cout<<q.top()<< endl; 
+    // Output: 4
 
     // Another priority queue
     priority_queue< int > ok;
@@ -45,7 +50,8 @@ int main()
         cout<< ok.top() << " ";
         ok.pop();
     }
-    cout<< endl; // Output: 5 4 3 2 1
+    cout<< endl; 
+    // Output: 5 4 3 2 1
 
     // Min-Heap (smallest element at top)
     priority_queue <int, vector<int>, greater<int> > pq;
@@ -55,7 +61,8 @@ int main()
     pq.push(2);
     pq.push(1);
     
-    cout<<pq.top()<< endl; // Output: 1
+    cout<<pq.top()<< endl; 
+    // Output: 1
 
     // Print all elements (ascending order)
     while(!pq.empty())
@@ -63,7 +70,8 @@ int main()
         cout<< pq.top() << " ";
         pq.pop();
     }
-    cout<< endl; // Output: 1 2 3 4 5
+    cout<< endl; 
+    // Output: 1 2 3 4 5
 
     // Min-Heap with pairs (compares first element)
     priority_queue< pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>> > ppq;
@@ -82,6 +90,7 @@ int main()
     cout<< endl;
     // Output: 1 5--2 4--3 3--4 2--5 1--
 
+
     // Default priority queue with pairs (max-heap based on first element)
     priority_queue< pair<int, int> > pq1;
     pq1.push({5, 1});
@@ -98,5 +107,32 @@ int main()
     }
     // Output: 5 1,4 2,3 3,2 4,1 5,
 
+    //first value is the priority and second value is the value
+    //here first value is normal and second value is negative so that it can be sorted in ascending order
+    //if second value is positive then it will be sorted in descending order based on first value
+    priority_queue < pair<int, int> > p;
+    p.push({1, -2});
+    p.push({3, -4});
+    p.push({3, -6});
+    p.push({3, -2});
+    p.push({5, -6});
+    p.push({7, -8});
+    p.push({9, -10});
+
+    while(!p.empty())
+    {
+        cout << p.top().first << " " << p.top().second << endl;;
+        p.pop();
+    }  
+    //output:
+     /*     7 -8
+            7 -8
+            5 -6
+            3 -2
+            3 -4
+            3 -6
+            1 -2
+   */
+        
     return 0;
 }
