@@ -49,7 +49,7 @@ int main() {
 
     // Access front element
     cout << "Front element: " << q2.front() << endl;
-
+    
     // Output: 2
 
     // Remove the front element (2)
